@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f00732bb6c039d3a63abf57526c92ecd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f00732bb6c039d3a63abf57526c92ecd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f00732bb6c039d3a63abf57526c92ecd = L.map(
+                "map_f00732bb6c039d3a63abf57526c92ecd",
+                {
+                    center: [14.4974, -14.4524],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c90fdedacc20e20c3467c60eb2f6fddd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c90fdedacc20e20c3467c60eb2f6fddd.addTo(map_f00732bb6c039d3a63abf57526c92ecd);
+        
+    
+            var feature_group_61d13eb163f98e74140523e6882a6bd5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b83987577b1afeaac716b73de79752d9 = L.marker(
+                [14.6937, -17.4441],
+                {
+}
+            ).addTo(feature_group_61d13eb163f98e74140523e6882a6bd5);
+        
+    
+            var icon_3ea035dea4120c1424028fb56c16bead = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bcb0cee8f5975dc3c38970b6209fa62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddeb1be32ae359cc13384394f4fed6c0 = $(`<div id="html_ddeb1be32ae359cc13384394f4fed6c0" style="width: 100.0%; height: 100.0%;"><b>Départements :</b> Dakar, Pikine, Guédiawaye, Keur Massar, Rufisque</div>`)[0];
+                popup_5bcb0cee8f5975dc3c38970b6209fa62.setContent(html_ddeb1be32ae359cc13384394f4fed6c0);
+            
+        
+
+        marker_b83987577b1afeaac716b73de79752d9.bindPopup(popup_5bcb0cee8f5975dc3c38970b6209fa62)
+        ;
+
+        
+    
+    
+            marker_b83987577b1afeaac716b73de79752d9.bindTooltip(
+                `<div>
+                     G15 Dakar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b83987577b1afeaac716b73de79752d9.setIcon(icon_3ea035dea4120c1424028fb56c16bead);
+            
+    
+            var marker_fa8a121d7c285e6a7668cb25c407e0eb = L.marker(
+                [14.6867, -17.4783],
+                {
+}
+            ).addTo(feature_group_61d13eb163f98e74140523e6882a6bd5);
+        
+    
+            var icon_f39be3493bee0a48cb586d342266b98f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3b9552f763b8bc80618b8e08ddc737a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e6bc672abd0b643240d221100cf71e3 = $(`<div id="html_2e6bc672abd0b643240d221100cf71e3" style="width: 100.0%; height: 100.0%;"><b>Facultés :</b> FASEG, FLSH, FST, FMPO, FSJP</div>`)[0];
+                popup_d3b9552f763b8bc80618b8e08ddc737a.setContent(html_2e6bc672abd0b643240d221100cf71e3);
+            
+        
+
+        marker_fa8a121d7c285e6a7668cb25c407e0eb.bindPopup(popup_d3b9552f763b8bc80618b8e08ddc737a)
+        ;
+
+        
+    
+    
+            marker_fa8a121d7c285e6a7668cb25c407e0eb.bindTooltip(
+                `<div>
+                     UCAD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa8a121d7c285e6a7668cb25c407e0eb.setIcon(icon_f39be3493bee0a48cb586d342266b98f);
+            
+    
+            feature_group_61d13eb163f98e74140523e6882a6bd5.addTo(map_f00732bb6c039d3a63abf57526c92ecd);
+        
+    
+            var feature_group_d31bb14704e606578dc9d4cff5e7f684 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f7caaabb40e63eed8baa620a9101ed7a = L.marker(
+                [14.791, -16.9647],
+                {
+}
+            ).addTo(feature_group_d31bb14704e606578dc9d4cff5e7f684);
+        
+    
+            var icon_2808ac3559895f1b8472c5b20ab54f85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ebf15fe8f8b0b99bf93777b9d9b0c67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a6f8c9b2bb8eef591f751f1617cae6f = $(`<div id="html_2a6f8c9b2bb8eef591f751f1617cae6f" style="width: 100.0%; height: 100.0%;"><b>Facultés :</b> SETIT, UFR Santé, SES</div>`)[0];
+                popup_7ebf15fe8f8b0b99bf93777b9d9b0c67.setContent(html_2a6f8c9b2bb8eef591f751f1617cae6f);
+            
+        
+
+        marker_f7caaabb40e63eed8baa620a9101ed7a.bindPopup(popup_7ebf15fe8f8b0b99bf93777b9d9b0c67)
+        ;
+
+        
+    
+    
+            marker_f7caaabb40e63eed8baa620a9101ed7a.bindTooltip(
+                `<div>
+                     Université Iba Der Thiam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7caaabb40e63eed8baa620a9101ed7a.setIcon(icon_2808ac3559895f1b8472c5b20ab54f85);
+            
+    
+            feature_group_d31bb14704e606578dc9d4cff5e7f684.addTo(map_f00732bb6c039d3a63abf57526c92ecd);
+        
+    
+            var feature_group_f20d14a0e14c5c7cad61f7b73fc5dbd7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4ccbfd1767d6966f6e428eeb7bc5850c = L.marker(
+                [16.062, -16.4252],
+                {
+}
+            ).addTo(feature_group_f20d14a0e14c5c7cad61f7b73fc5dbd7);
+        
+    
+            var icon_dde8c72133183e3d8aa20a83798e45f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1089dbdb983f04f1ec6e0e74d0e4ef01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a37b782998eb2961e103d6573586471 = $(`<div id="html_7a37b782998eb2961e103d6573586471" style="width: 100.0%; height: 100.0%;">Université Gaston Berger (UGB)</div>`)[0];
+                popup_1089dbdb983f04f1ec6e0e74d0e4ef01.setContent(html_7a37b782998eb2961e103d6573586471);
+            
+        
+
+        marker_4ccbfd1767d6966f6e428eeb7bc5850c.bindPopup(popup_1089dbdb983f04f1ec6e0e74d0e4ef01)
+        ;
+
+        
+    
+    
+            marker_4ccbfd1767d6966f6e428eeb7bc5850c.bindTooltip(
+                `<div>
+                     UGB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ccbfd1767d6966f6e428eeb7bc5850c.setIcon(icon_dde8c72133183e3d8aa20a83798e45f8);
+            
+    
+            feature_group_f20d14a0e14c5c7cad61f7b73fc5dbd7.addTo(map_f00732bb6c039d3a63abf57526c92ecd);
+        
+    
+            var layer_control_0ee7b5a83bf6001e7e60746a1e39ec8f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c90fdedacc20e20c3467c60eb2f6fddd,
+                },
+                overlays :  {
+                    "Dakar" : feature_group_61d13eb163f98e74140523e6882a6bd5,
+                    "Thi\u00e8s" : feature_group_d31bb14704e606578dc9d4cff5e7f684,
+                    "Saint-Louis" : feature_group_f20d14a0e14c5c7cad61f7b73fc5dbd7,
+                },
+            };
+            let layer_control_0ee7b5a83bf6001e7e60746a1e39ec8f = L.control.layers(
+                layer_control_0ee7b5a83bf6001e7e60746a1e39ec8f_layers.base_layers,
+                layer_control_0ee7b5a83bf6001e7e60746a1e39ec8f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_f00732bb6c039d3a63abf57526c92ecd);
+
+        
+</script>
+</html>
