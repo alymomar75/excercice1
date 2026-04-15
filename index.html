@@ -1,0 +1,46 @@
+import folium as flm
+
+# Initialisation centrée sur le Sénégal
+m1 = flm.Map(location=[14.4974, -14.4524], zoom_start=7, tiles="OpenStreetMap")
+
+# --- GROUPE DAKAR ---
+grp_dakar = flm.FeatureGroup(name="Dakar").add_to(m1)
+
+# Marker G15
+flm.Marker(
+    location=[14.6937, -17.4441],
+    popup="<b>Départements :</b> Dakar, Pikine, Guédiawaye, Keur Massar, Rufisque",
+    tooltip="G15 Dakar",
+    icon=flm.Icon(color="red", icon="university", prefix="fa")
+).add_to(grp_dakar)
+
+# Marker UCAD
+flm.Marker(
+    location=[14.6867, -17.4783],
+    popup="<b>Facultés :</b> FASEG, FLSH, FST, FMPO, FSJP",
+    tooltip="UCAD",
+    icon=flm.Icon(color="blue", icon="graduation-cap", prefix="fa")
+).add_to(grp_dakar)
+
+# --- THIÈS ---
+grp_thies = flm.FeatureGroup(name="Thiès").add_to(m1)
+flm.Marker(
+    location=[14.7910, -16.9647],
+    popup="<b>Facultés :</b> SETIT, UFR Santé, SES",
+    tooltip="Université Iba Der Thiam",
+    icon=flm.Icon(color="green", icon="info-sign")
+).add_to(grp_thies)
+
+# --- SAINT-LOUIS ---
+grp_sl = flm.FeatureGroup(name="Saint-Louis").add_to(m1)
+flm.Marker(
+    location=[16.0620, -16.4252],
+    popup="Université Gaston Berger (UGB)",
+    tooltip="UGB",
+    icon=flm.Icon(color="purple", icon="book", prefix="fa")
+).add_to(grp_sl)
+
+# Contrôle des couches et sauvegarde
+flm.LayerControl().add_to(m1)
+m1.save("index.html")
+m1
